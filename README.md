@@ -1,6 +1,29 @@
 # Recommender-system
 Develop a machine learning model to recommend movies to users based on their past viewing history and preferences.
 
+# BPR Project
+
+A project implementing Bayesian Personalized Ranking (BPR) using Graph Neural Networks (GNNs). This repository includes data processing, model training, and evaluation utilities.
+
+## Project Structure
+
+```plaintext
+bpr_project/
+├── data/
+│   ├── download.py         # Functions for downloading and processing the dataset
+│   ├── preprocess.py       # Functions for preprocessing (Spark/Pandas)
+├── models/
+│   ├── gnn.py              # GNN and Model classes
+│   ├── loss.py             # BPR loss and evaluation metrics
+├── utils/
+│   ├── sampler.py          # Functions for BPR sampling
+│   ├── metrics.py          # Helper functions for AUC and evaluation
+│   ├── config.py           # Default configuration and hyperparameters
+├── main.py                 # Main training script
+├── train.py                # Training and validation loops
+├── requirements.txt        # Dependencies
+├── README.md               # Project documentation
+
 
 ## File Descriptions
 
