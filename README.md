@@ -47,9 +47,17 @@ gnn-bpr_project/
 
 ---
 
+## How to Run
 
+1. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. **Download and preprocess data and Train the model**:
+   ```bash
+   python main.py
 
-
+---
 ## Dataset Description
 
 ### Dataset Source
@@ -286,22 +294,7 @@ Documentation providing an overview of the project, setup instructions, and usag
 
 ---
 
-## How to Run
 
-1. **Install dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-2. **Download and preprocess data**:
-   ```bash
-   python data/download.py
-   python data/preprocess.py
-   ```
-
-3. **Train the model**:
-   ```bash
-   python main.py
    ```
 
 4. **Evaluate the model**:
