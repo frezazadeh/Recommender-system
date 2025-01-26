@@ -103,7 +103,25 @@ Change the batch size and number of epochs:
 ```bash
 python main.py --batch_size 512 --epochs 200
 ```
+The backend is implemented using FastAPI. To run the backend server, use the following command:
 
+```bash
+uvicorn app:app --reload
+```
+
+- `app:app`: This specifies the file (`app.py`) and the FastAPI application instance (`app`) to run.
+- `--reload`: Enables automatic reloading of the server whenever code changes are detected, which is useful during development.
+
+The frontend is implemented using Streamlit. To start the frontend application, use the following command:
+
+```bash
+streamlit run frontend.py
+```
+
+- `frontend.py`: The Streamlit script containing the frontend logic.
+- After running this command, a local server will start, and a URL will be displayed in the terminal (e.g., `http://localhost:8501`). Open this URL in your web browser to interact with the frontend.
+
+--- 
 ## Contributing
 
 If you would like to contribute to this project, feel free to fork the repository and submit a pull request.
