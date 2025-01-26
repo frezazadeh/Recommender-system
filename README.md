@@ -2,14 +2,15 @@
 
 ## Table of Contents
 1. [Problem Statement](#problem-statement)
-2. [Dataset Description](#dataset-description)
-3. [Data Exploration and Preprocessing](#data-exploration-and-preprocessing)
-4. [Model Selection and Training](#model-selection-and-training)
-5. [Model Evaluation](#model-evaluation)
-6. [Deployment](#deployment)
-7. [Results and Insights](#results-and-insights)
-8. [How to Run](#how-to-run)
-9. [Future Improvements](#future-improvements)
+2. [Project Structure](#project-structure)
+3. [Dataset Description](#dataset-description)
+4. [Data Exploration and Preprocessing](#data-exploration-and-preprocessing)
+5. [Model Selection and Training](#model-selection-and-training)
+6. [Model Evaluation](#model-evaluation)
+7. [Deployment](#deployment)
+8. [Results and Insights](#results-and-insights)
+9. [How to Run](#how-to-run)
+10. [Future Improvements](#future-improvements)
 
 ---
 
@@ -18,6 +19,31 @@
 The goal of this project is to develop a machine learning model that recommends movies to users based on their past viewing history and preferences. Using the MovieLens dataset, the system aims to provide personalized movie recommendations through a machine learning model integrated into a REST API.
 
 ---
+
+## Project Structure
+
+```plaintext
+bpr_project/
+├── data/
+│   ├── download.py         # Functions for downloading and processing the dataset
+│   ├── preprocess.py       # Functions for preprocessing (Spark/Pandas)
+├── models/
+│   ├── gnn.py              # GNN and Model classes
+│   ├── loss.py             # BPR loss and evaluation metrics
+├── utils/
+│   ├── sampler.py          # Functions for BPR sampling
+│   ├── metrics.py          # Helper functions for AUC and evaluation
+│   ├── config.py           # Default configuration and hyperparameters
+├── main.py                 # Main training script
+├── train.py                # Training and validation loops
+├── requirements.txt        # Dependencies
+├── README.md               # Project documentation
+```
+
+---
+
+
+
 
 ## Dataset Description
 
@@ -191,27 +217,6 @@ A machine learning model to recommend movies to users based on their past viewin
 
 ---
 
-## Project Structure
-
-```plaintext
-bpr_project/
-├── data/
-│   ├── download.py         # Functions for downloading and processing the dataset
-│   ├── preprocess.py       # Functions for preprocessing (Spark/Pandas)
-├── models/
-│   ├── gnn.py              # GNN and Model classes
-│   ├── loss.py             # BPR loss and evaluation metrics
-├── utils/
-│   ├── sampler.py          # Functions for BPR sampling
-│   ├── metrics.py          # Helper functions for AUC and evaluation
-│   ├── config.py           # Default configuration and hyperparameters
-├── main.py                 # Main training script
-├── train.py                # Training and validation loops
-├── requirements.txt        # Dependencies
-├── README.md               # Project documentation
-```
-
----
 
 ## File Descriptions
 
