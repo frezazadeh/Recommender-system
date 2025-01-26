@@ -152,6 +152,7 @@ The plots below illustrate the progression of key metrics during the training of
 
 <img src="plots/training_validation_metrics_big.png"/>
 ---
+
 # Contributing
 
 If you would like to contribute to this project, feel free to fork the repository and submit a pull request.
