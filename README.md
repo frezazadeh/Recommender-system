@@ -16,7 +16,7 @@
 
 ---
 
-## Problem Statement
+# Problem Statement
 
 The goal of this project is to develop a machine learning model that recommends movies to users based on their past viewing history and preferences. Using the MovieLens dataset, the system aims to provide personalized movie recommendations through a machine learning model integrated into a Fast API.
 
@@ -26,7 +26,7 @@ Bayesian Personalized Ranking (BPR) optimizes the recommendation model by learni
 
 ---
 
-## Project Structure
+# Project Structure
 
 ```plaintext
 gnn-bpr_project/
@@ -126,6 +126,50 @@ Below is a screenshot of the frontend interface:
 <img src="plots/Frontend.png"/>
 
 --- 
+
+# Training and Validation Metrics Analysis
+
+## Overview
+The plots below illustrate the progression of key metrics during the training of a recommendation model using Bayesian Personalized Ranking (BPR) loss. These metrics include:
+
+1. **BPR Loss**: Tracks the loss values for both the training and test datasets over epochs.
+2. **Validation AUC**: Measures the model's ability to rank items correctly on a validation dataset.
+
+## Metrics Analysis
+
+### 1. **Train vs. Test BPR Loss**
+- **Description**: The left plot shows the training and test BPR loss across epochs.
+- **Insights**:
+  - Both training and test loss decrease rapidly in the early epochs, indicating effective learning.
+  - After approximately 40 epochs, the loss stabilizes near 0.05 for both training and test datasets.
+  - Minimal divergence between training and test loss demonstrates good generalization and minimal overfitting.
+
+### 2. **Validation AUC**
+- **Description**: The right plot tracks the AUC (Area Under the Curve) on the validation dataset over epochs.
+- **Insights**:
+  - AUC improves significantly in the initial epochs, surpassing 0.975 after around 30 epochs.
+  - The metric continues to improve gradually, stabilizing near 0.985–0.990 after 100 epochs.
+  - Consistent improvement without noticeable drops suggests robust model performance on unseen data.
+
+## Conclusions
+- The model converges effectively, with both BPR loss and AUC stabilizing after approximately 100 epochs.
+- The alignment between training and test BPR loss highlights a lack of overfitting, indicating that the model can generalize well.
+- High AUC values (close to 0.99) suggest excellent ranking performance on the validation set.
+
+## Recommendations
+- Further training may yield diminishing returns as the metrics have largely stabilized.
+- Consider early stopping in future runs to save computational resources.
+- Experiment with hyperparameter tuning (e.g., learning rate, regularization) to explore potential minor improvements.
+
+---
+**Generated Metrics Plot:**
+
+![Training and Validation Metrics](training_validation_metrics_big.png)
+
+
+
+
+
 
 ## Contributing
 
