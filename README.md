@@ -1,4 +1,4 @@
-# Movie Recommendation System: Comprehensive Report
+# Movie Recommendation System
 
 ## Table of Contents
 1. [Problem Statement](#problem-statement)
