@@ -18,6 +18,10 @@
 
 The goal of this project is to develop a machine learning model that recommends movies to users based on their past viewing history and preferences. Using the MovieLens dataset, the system aims to provide personalized movie recommendations through a machine learning model integrated into a REST API.
 
+Graph Neural Networks (GNNs) are used to process the graph-structured data where nodes represent entities (e.g., users and movies), and edges represent interactions (e.g., ratings). In my code, GNNs are the backbone of the recommendation model.
+
+Bayesian Personalized Ranking (BPR) optimizes the recommendation model by learning to rank observed (positive) user-movie interactions higher than unobserved (negative) ones.
+
 ---
 
 ## Project Structure
