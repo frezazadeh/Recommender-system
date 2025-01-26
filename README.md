@@ -124,7 +124,9 @@ streamlit run frontend.py
 Below is a screenshot of the frontend interface:
 
 <img src="plots/Frontend.png"/>
+
 --- 
+
 ## Contributing
 
 If you would like to contribute to this project, feel free to fork the repository and submit a pull request.
