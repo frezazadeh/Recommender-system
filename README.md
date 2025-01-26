@@ -3,14 +3,16 @@
 ## Table of Contents
 1. [Problem Statement](#problem-statement)
 2. [Project Structure](#project-structure)
-3. [Dataset Description](#dataset-description)
-4. [Data Exploration and Preprocessing](#data-exploration-and-preprocessing)
-5. [Model Selection and Training](#model-selection-and-training)
-6. [Model Evaluation](#model-evaluation)
-7. [Deployment](#deployment)
-8. [Results and Insights](#results-and-insights)
-9. [How to Run](#how-to-run)
-10. [Future Improvements](#future-improvements)
+3. [Installation](#installation)
+4. [Downlaod and Preprocess Data and Run Training](#downlaod-and-preprocess-data-and-run-training)
+5. [Dataset Description](#dataset-description)
+6. [Data Exploration and Preprocessing](#data-exploration-and-preprocessing)
+7. [Model Selection and Training](#model-selection-and-training)
+8. [Model Evaluation](#model-evaluation)
+9. [Deployment](#deployment)
+10. [Results and Insights](#results-and-insights)
+11. [How to Run](#how-to-run)
+12. [Future Improvements](#future-improvements)
 
 ---
 
@@ -61,7 +63,7 @@ Install the required dependencies:
 pip install -r requirements.txt
 ```
 
-## Usage
+## Downlaod and Preprocess Data and Run Training
 
 You can run the main script with the following options:
 
