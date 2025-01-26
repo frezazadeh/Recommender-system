@@ -27,20 +27,22 @@ Bayesian Personalized Ranking (BPR) optimizes the recommendation model by learni
 ## Project Structure
 
 ```plaintext
-bpr_project/
+gnn-bpr_project/
+├── saved_model/
+├── plots/
 ├── data/
 │   ├── download.py         # Functions for downloading and processing the dataset (Spark/Pandas)
 ├── models/
 │   ├── gnn.py              # GNN and Model classes
 │   ├── loss.py             # BPR loss and evaluation metrics
+│   ├── tarin.py            # Training and validation loops (core of application)
 ├── utils/
 │   ├── sampler.py          # Functions for BPR sampling
 │   ├── metrics.py          # Helper functions for AUC and evaluation
-│   ├── config.py           # Default configuration and hyperparameters
 ├── main.py                 # Main training script
-├── train.py                # Training and validation loops
+├── app.py                  # API Gateway for System (FastAPI)
+├── frontend.py             # User interface for interacting with the backend movie recommendation system
 ├── requirements.txt        # Dependencies
-├── README.md               # Project documentation
 ```
 
 ---
