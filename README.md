@@ -1,3 +1,6 @@
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
+
+
 # Movie Recommendation System
 
 ## Table of Contents
@@ -158,7 +161,4 @@ The plots below illustrate the progression of key metrics during the training of
 
 If you would like to contribute to this project, feel free to fork the repository and submit a pull request.
 
-# License
-
-This project is licensed under the [MIT License](LICENSE).
 
