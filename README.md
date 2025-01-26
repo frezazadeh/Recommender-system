@@ -46,18 +46,71 @@ gnn-bpr_project/
 ```
 
 ---
+## Installation
 
-## How to Run
+Clone this repository and navigate to the project directory:
 
-1. **Install dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-2. **Download and preprocess data and Train the model**:
-   ```bash
-   python main.py
+```bash
+git clone <repository-url>
+cd <repository-directory>
+```
 
+Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+You can run the main script with the following options:
+
+```bash
+python main.py [OPTIONS]
+```
+
+### Arguments
+
+| Argument           | Type    | Default   | Description                                          |
+|--------------------|---------|-----------|------------------------------------------------------|
+| `--data_size`      | `str`   | `small`   | The size of the dataset to use (`big` or `small`).   |
+| `--hidden_channels`| `int`   | `32`      | Number of hidden channels in the model.             |
+| `--lr`             | `float` | `1e-3`    | Learning rate for the optimizer.                    |
+| `--batch_size`     | `int`   | `1024`    | Batch size for training.                            |
+| `--epochs`         | `int`   | `150`     | Number of training epochs.                          |
+| `--steps`          | `int`   | `100`     | Number of steps for intermediate logging or updates.|
+| `--weight_decay`   | `float` | `1e-5`    | Weight decay for regularization.                    |
+| `--patience`       | `float` | `30`      | Early stopping patience.                            |
+
+### Examples
+
+Run the code with the default settings:
+
+```bash
+python main.py
+```
+
+Run the code with a big dataset and a custom learning rate:
+
+```bash
+python main.py --data_size big --lr 0.001
+```
+
+Change the batch size and number of epochs:
+
+```bash
+python main.py --batch_size 512 --epochs 200
+```
+
+## Contributing
+
+If you would like to contribute to this project, feel free to fork the repository and submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
 ---
+
 ## Dataset Description
 
 ### Dataset Source
