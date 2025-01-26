@@ -164,7 +164,7 @@ The plots below illustrate the progression of key metrics during the training of
 ---
 **Generated Metrics Plot:**
 
-![Training and Validation Metrics](training_validation_metrics_big.png)
+<img src="plots/training_validation_metrics_big.png"/>
 
 
 
