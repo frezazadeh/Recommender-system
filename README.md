@@ -121,6 +121,8 @@ streamlit run frontend.py
 - `frontend.py`: The Streamlit script containing the frontend logic.
 - After running this command, a local server will start, and a URL will be displayed in the terminal (e.g., `http://localhost:8501`). Open this URL in your web browser to interact with the frontend.
 
+Below is a screenshot of the frontend interface:
+<img src="plots/Frontend.png"/>
 --- 
 ## Contributing
 
