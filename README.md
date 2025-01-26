@@ -154,7 +154,7 @@ The plots below illustrate the progression of key metrics during the training of
 ## Conclusions
 - The model converges effectively, with both BPR loss and AUC stabilizing after approximately 100 epochs.
 - The alignment between training and test BPR loss highlights a lack of overfitting, indicating that the model can generalize well.
-- High AUC values (close to 0.99) suggest excellent ranking performance on the validation set.
+- High AUC values (close to 0.98) suggest excellent ranking performance on the validation set.
 
 **Generated Metrics Plot:**
 
