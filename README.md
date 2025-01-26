@@ -5,7 +5,7 @@
 2. [Project Structure](#project-structure)
 3. [Installation](#installation)
 4. [Downlaod and Preprocess Data and Run Training](#downlaod-and-preprocess-data-and-run-training)
-5. [Dataset Description](#dataset-description)
+5. [Training and Validation Metrics Analysis for Big Data](#training-and-Validation-Metrics-Analysis-for-Big-Data)
 6. [Data Exploration and Preprocessing](#data-exploration-and-preprocessing)
 7. [Model Selection and Training](#model-selection-and-training)
 8. [Model Evaluation](#model-evaluation)
@@ -48,7 +48,7 @@ gnn-bpr_project/
 ```
 
 ---
-## Installation
+# Installation
 
 Clone this repository and navigate to the project directory:
 
@@ -127,7 +127,7 @@ Below is a screenshot of the frontend interface:
 
 --- 
 
-# Training and Validation Metrics Analysis
+# Training and Validation Metrics Analysis for Big Data
 
 ## Overview
 The plots below illustrate the progression of key metrics during the training of a recommendation model using Bayesian Personalized Ranking (BPR) loss. These metrics include:
