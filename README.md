@@ -25,8 +25,7 @@ The goal of this project is to develop a machine learning model that recommends 
 ```plaintext
 bpr_project/
 ├── data/
-│   ├── download.py         # Functions for downloading and processing the dataset
-│   ├── preprocess.py       # Functions for preprocessing (Spark/Pandas)
+│   ├── download.py         # Functions for downloading and processing the dataset (Spark/Pandas)
 ├── models/
 │   ├── gnn.py              # GNN and Model classes
 │   ├── loss.py             # BPR loss and evaluation metrics
