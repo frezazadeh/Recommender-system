@@ -156,16 +156,10 @@ The plots below illustrate the progression of key metrics during the training of
 - The alignment between training and test BPR loss highlights a lack of overfitting, indicating that the model can generalize well.
 - High AUC values (close to 0.99) suggest excellent ranking performance on the validation set.
 
-## Recommendations
-- Further training may yield diminishing returns as the metrics have largely stabilized.
-- Consider early stopping in future runs to save computational resources.
-- Experiment with hyperparameter tuning (e.g., learning rate, regularization) to explore potential minor improvements.
-
----
 **Generated Metrics Plot:**
 
 <img src="plots/training_validation_metrics_big.png"/>
-
+---
 
 
 
