@@ -8,6 +8,32 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, lit, row_number, array_contains, split, when
 from pyspark.sql.window import Window
 
+
+
+'''
+from pyspark.sql import SparkSession
+
+    Imports SparkSession, the entry point for Apache Spark SQL operations.
+    Used for big data processing and distributed computation.
+
+from pyspark.sql.functions import col, lit, row_number, array_contains, split, when
+
+    Imports various Spark SQL functions used for DataFrame transformations:
+        col: References a column in a DataFrame.
+        lit: Creates a literal (constant) value in a DataFrame.
+        row_number: Assigns row numbers to partitions, useful for ranking.
+        array_contains: Checks if an array column contains a specific value.
+        split: Splits a string column into an array based on a delimiter.
+        when: Used for conditional expressions (similar to SQL CASE statements).
+
+from pyspark.sql.window import Window
+
+    Imports Window, which is used for performing window functions (like ranking and aggregations over partitions of data) in Spark DataFrames.
+
+
+'''
+
+
 #Missing Titles → Replaced with "Unknown Title".
 #Missing Genres → Replaced with "Unknown".
 #Missing Ratings → Dropped rows where rating is missing.
