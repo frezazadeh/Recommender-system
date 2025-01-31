@@ -97,8 +97,11 @@ We are working with the MovieLens dataset, a widely used dataset in recommendati
 ## 6. Key Challenges Identified
 
 🔹 **Sparse Data:** 98.3% of the user-item matrix is empty. **Matrix factorization (SVD, ALS)** or **deep learning techniques (Neural Collaborative Filtering)** could improve recommendations.
+
 🔹 **Cold Start Problem:** New users and movies with very few ratings make it hard to generate meaningful recommendations.
+
 🔹 **Bias Towards Popular Movies:** The model might over-recommend popular movies unless mitigated by diversity-promoting techniques.
+
 🔹 **Skewed Rating Distribution:** Many ratings are clustered around **3.0-5.0**, which could make it harder to differentiate good recommendations from bad ones.
 
 ---
